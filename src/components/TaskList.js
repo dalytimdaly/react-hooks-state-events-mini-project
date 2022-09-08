@@ -1,9 +1,12 @@
 import React from "react";
+import Task from "./Task";
 
-function TaskList() {
+function TaskList({ tasks, onHandleClick }) {
+
+
   return (
     <div className="tasks">
-      {/* display a list of tasks using Task component */}
+      <Task tasks={tasks} onHandleClick={onHandleClick}/>
     </div>
   );
 }
